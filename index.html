@@ -78,7 +78,9 @@
   .eyebrow::before { content: ""; width: 1.8em; height: 1px; background: var(--teal); opacity: 0.8; }
   .kicker { color: var(--faint); font-size: 0.95rem; }
   .measure { max-width: var(--measure); }
-  .cite-note { margin-top: 1.9rem; font-size: 0.9rem; line-height: 1.55; color: var(--muted); max-width: 62ch; border-left: 3px solid var(--teal); padding-left: 1rem; }
+  .evidence { margin-top: 2.2rem; display: flex; flex-direction: column; gap: 1rem; }
+  .evidence .eyebrow { margin-bottom: 0.2rem; }
+  .cite-item { font-size: 0.9rem; line-height: 1.55; color: var(--muted); max-width: 64ch; border-left: 3px solid var(--teal); padding-left: 1rem; }
 
   /* nav */
   .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(1.4) blur(10px);
@@ -392,10 +394,17 @@
               treatment-related insight together, instead of a chain of separate assays.</p></div></div>
         </div>
       </div>
-      <p class="cite-note reveal">Real-world precedent: Oxford Nanopore and UMC Utrecht are consolidating up to
-        15 separate clinical tests into a single nanopore workflow that reads methylation, structural variants
-        and repeats together, the same "one test, many answers" logic NORA is built on.
-        <a href="https://nanoporetech.com/news/oxford-nanopore-technologies-and-umc-utrecht-collaborate-on-1-000-human-genome-sequencing-project" target="_blank" rel="noopener">Read more</a></p>
+      <div class="evidence reveal">
+        <p class="eyebrow">Evidence from the field</p>
+        <p class="cite-item">Oxford Nanopore and UMC Utrecht are consolidating up to 15 separate clinical tests
+          into a single nanopore workflow that reads methylation, structural variants and repeats together, the
+          same "one test, many answers" logic NORA is built on.
+          <a href="https://nanoporetech.com/news/oxford-nanopore-technologies-and-umc-utrecht-collaborate-on-1-000-human-genome-sequencing-project" target="_blank" rel="noopener">Oxford Nanopore &amp; UMC Utrecht</a></p>
+        <p class="cite-item">Peer-reviewed: in critically ill patients, nanopore long-read sequencing returned
+          answers in 5.3 versus 18.4 days and changed urgent clinical decisions, direct evidence for the speed
+          advantage NORA targets, here in a different clinical setting.
+          <a href="https://www.nature.com/articles/s41431-025-01959-x" target="_blank" rel="noopener">Eur. J. Hum. Genet., 2026</a></p>
+      </div>
     </div>
   </section>
 
